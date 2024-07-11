@@ -2,10 +2,88 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>내 GitHub 페이지</title>
+    <title>주식회사 브랜드엑스</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
+    </style>
 </head>
 <body>
-    <h1>TEST</h1>
-    <p>TEST.</p>
+    <header>
+        <h1>내 웹사이트</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <h2>메인 콘텐츠</h2>
+            <p>여기에 주요 내용을 작성합니다.</p>
+        </article>
+        
+        <aside>
+            <h3>사이드바</h3>
+            <p>부가적인 정보를 여기에 넣습니다.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 내 웹사이트. 모든 권리 보유.</p>
+    </footer>
 </body>
 </html>
