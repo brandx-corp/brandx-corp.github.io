@@ -16,7 +16,7 @@ function App() {
                 }, '☰')
             ),
             e('nav', { className: 'mt-4' },
-                e('a', { href: '#', className: 'flex items-center p-4 hover:bg-gray-700' },
+e('a', { href: '#models', className: 'flex items-center p-4 hover:bg-gray-700', onClick: handleMenuClick },
                     e('span', { className: 'mr-2' }, '👥'),
                     e('span', { className: `${isSidebarOpen ? 'block' : 'hidden'}` }, '모델 리스트')
                 ),
