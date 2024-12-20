@@ -34,10 +34,12 @@ function App() {
                     e('h2', { className: 'text-xl font-semibold' }, '대시보드')
                 )
             ),
-            e('main', { className: 'p-6' },
-                e('div', { className: 'bg-white rounded-lg shadow p-6' },
-                    e('h3', { className: 'text-lg font-semibold mb-4' }, '환영합니다!'),
-                    e('p', null, '좌측 메뉴에서 원하시는 항목을 선택해주세요.')
+e('main', { className: 'p-6' },
+    window.location.hash === '#models' ? 
+        e(ModelList) : 
+        e('div', { className: 'bg-white rounded-lg shadow p-6' },
+            e('h3', { className: 'text-lg font-semibold mb-4' }, '환영합니다!'),
+            e('p', null, '좌측 메뉴에서 원하시는 항목을 선택해주세요.')
                 )
             )
         )
